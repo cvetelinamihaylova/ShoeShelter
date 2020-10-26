@@ -1,44 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/styles.css">
-    <title>Register Page</title>
-</head>
-
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li class="site-logo">Shoe</li>
-                <li>
-                    <a href="">
-                        <img src="../public/sneakers.png" alt="">
-                    </a>
-                </li>
-                <li class="site-logo">Shelf</li>
-            </ul>
-        </nav>
-    </header>
     <main>
         <h1>Register</h1>
         <p class="form-info">Already registered?
             <a href="">Login now</a> and have some fun!
         </p>
-        <form action="" method="">
+        <form action="/user/register" method="POST">
             <div>
-                <input type="email" name="" placeholder="Email...">
+                <input type="email" name="email" placeholder="Email...">
             </div>
             <div>
-                <input type="text" name="" placeholder="Full name...">
+                <input type="text" name="fullName" placeholder="Full name...">
             </div>
             <div>
-                <input type="password" name="" placeholder="Password">
+                <input type="password" name="password" placeholder="Password">
             </div>
             <div>
-                <input type="password" name="" placeholder="Re-password">
+                <input type="password" name="repeatPassword" placeholder="Re-password">
             </div>
             <div>
                 <p class="message"></p>
@@ -46,9 +23,4 @@
             </div>
         </form>
     </main>
-    <footer>
-        <p><a href="https://softuni.bg">Software University</a> - JS Back End @ 2020</p>
-    </footer>
-</body>
-
-</html>
+   
