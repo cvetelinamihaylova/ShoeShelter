@@ -1,6 +1,7 @@
 const routers = [
     { homeRouter: require('./homeRouter') },
-    { userRouter: require('./userRouter') }
+    { userRouter: require('./userRouter') },
+    { shoeRouter: require('./shoeRouter') },
 ];
 
 module.exports = (router) => {
