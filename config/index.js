@@ -4,8 +4,8 @@ const config = {
     development: {
         port: process.env.PORT || 9999,
         dbUrl: 'mongodb://127.0.0.1:27017/shoeShelter',
-        cookie: 'x-auth-token',
-        secret: 'superSecret',
+        authCookieName : 'x-auth-token',
+        jwtSecret: 'superSecret',
         saltRounds: 10
     }
 };
