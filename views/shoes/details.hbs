@@ -6,16 +6,22 @@
             <div class="description">{{description}}
                 <br>
                 <br>
-                <p> <strong>Buyers:</strong> 156</p>
+                <p> <strong>Buyers:</strong> {{buyers.length}}</p>
                 <br>
                 <p class="price">{{price}}</p>
             </div>
         </div>
         <div class="actions">
-            <<a href="">Edit</a>
-                <a href="">Delete</a>
-                <a href="">Buy</a>
-                <span>You bought it</span>
+            {{!-- {{#if isCreator}} --}}
+            <a href="/shoes/edit/{{_id}}">Edit</a>
+            <a href="/shoes/delete/{{_id}}">Delete</a>
+            {{!-- {{else}} --}}
+            {{#unless buyers}}
+            <a href="/shoes/buy/{{_id}}">Buy</a>
+            {{else}}
+            <span>You bought it</span>
+            {{/unless}}
+            {{!-- {{/if}} --}}
         </div>
     </div>
 </main>
